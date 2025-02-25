@@ -1,0 +1,152 @@
+body{
+  background-color: #f7eee6;
+  color: black;
+  font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.PAGE {
+    width: 1300px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+.prenom{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.apro{
+    font-weight: bold;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.titre{
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 70px;
+}
+
+.espace{
+	margin-bottom: 20px;
+}
+
+.block{
+	flex: 1; /* Chaque bloc prend un espace égal */
+}
+
+.blocks{
+  display: flex; /* Active le mode flex */
+  justify-content: space-between; /* Espace entre les deux blocs */
+  align-items: flex-start; /* Aligne les éléments en haut */
+  gap: 20px; /* Espacement entre les deux colonnes */
+  padding: 20px; /* Marges internes */
+}
+
+
+
+.photo1 {
+    height: 300px;
+    width: 400px;
+    float: right;
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.txt1{
+    height: 500px;
+    width: 500px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.txt{
+    height: 400px;
+    width: 700px;
+    line-height: 25px;
+    margin-top: 50px;
+}
+.txt2{
+    height: 200px;
+    width: 500px;
+    line-height: 25px;
+    margin-top: 50px;
+
+}
+.txt3 {
+    display: inline-block;
+    color: #5a189a;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.txt4{
+    line-height: 50px;
+    margin-top: 50px;
+    text-align: justify;
+}
+ .contact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-list li {
+            margin: 10px 0;
+        }
+        .contact-list a {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+}
+}
+
+.titre1{
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+
+/*Menu*/
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

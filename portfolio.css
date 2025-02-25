@@ -1,0 +1,247 @@
+body{
+  background-color: #f7eee6;
+  color: black;
+  font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.content {
+  padding: 50px;
+}
+.PAGE {
+    width: 1300px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.prenom{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome{
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 100px;
+}
+
+.photo1 {
+    height: 400px;
+    width: 310px;
+    float: right;
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.txt1{
+    height: 400px;
+    width: 700px;
+    line-height: 30px;
+    margin-top: 50px;
+    float: left;
+}
+.txt3 {
+    display: inline-block;
+    color: #5a189a;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+
+
+.Clear {
+    clear: both;
+}
+
+/*Menu*/
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+     position: relative;
+    z-index: 10;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Les cartes de chaque projet*/
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+  margin-top: 50px;
+   display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Ombre blanche translucide */
+  width: 900px;
+  height: 520px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4); /* Augmentation de l'ombre blanche */
+}
+.espace{
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 202px;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+.card-description {
+   color: black;
+  font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 35px;
+  margin: 50px;
+}
+
+.card-icons {
+  display: flex; /* Met en ligne tous les éléments enfants */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Aligne verticalement */
+  gap: 10px; /* Espace entre l'icône et le texte */
+}
+
+.card-icons a {
+  display: flex; /* Met en ligne le texte et l'icône */
+  align-items: center; /* Aligne verticalement */
+  text-decoration: none; /* Supprime le soulignement */
+  color: black; /* Couleur du texte et de l'icône */
+}
+
+.card-icons p {
+  margin-right: 10px;
+  font-size: 25px; /* Ajuste la taille du texte */
+    font-weight: bold;
+}
+
+.card-icons i {
+  font-size: 20px; /* Ajuste la taille de l'icône */
+  margin-left: : 10px; /* Ajoute un espace entre l'icône et le texte (optionnel) */
+}
+
+.card-icons a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card-icons a:hover {
+  color: #007bff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Permet de positionner la date correctement */
+  margin-bottom: 20px;
+}
+
+.card-date {
+  position: absolute;
+  left: 20px; /* Positionne la date à gauche */
+  font-size: 1.8rem; /* Augmente la taille de la date */
+  font-weight: bold;
+  color: #5a189a;
+  background: rgba(90, 24, 154, 0.1); /* Ajoute un fond subtil */
+  padding: 8px 15px; /* Augmente l’espace autour du texte */
+  border-radius: 8px; /* Arrondit un peu plus les bords */
+}
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  flex-grow: 1; /* Permet au titre de rester centré */
+}
+
+
+/* Image cachée par défaut */
+.image-overlay {
+    position: absolute;
+    inset: 0; /* S'étend sur toute la carte */
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease; /* Transition fluide pour l'apparition */
+}
+
+.intro-card:hover .image-overlay {
+    opacity: 1; /* Image visible au survol */
+}
+
+.image-overlay img {
+    max-width: 100%; /* L'image occupe toute la largeur possible */
+    border-radius: 15px; /* Coins arrondis */
+    transition: transform 0.3s ease; /* Effet fluide au survol */
+}
+
+.intro-card:hover .image-overlay img {
+    transform: scale(1.1); /* Zoom de l'image au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+
+
